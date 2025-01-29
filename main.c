@@ -4,6 +4,7 @@
 
 int
 main(int argc, char* argv[]){
+ if(argv[1] == NULL) printf("%s (FILE | DIRECTORY)...\n", argv[0]);
  int ret = 0;
  struct stat buf;
  while(--argc){
